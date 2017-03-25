@@ -10,7 +10,6 @@ setwd('./Introduction to Data Science UCB/Week 6')
 ### Reading the Data
 
 posey <- read.csv('./posey.csv')
-
 head(posey)
 
 ### Checking for any Null or NA Values
@@ -36,9 +35,7 @@ median(rbi)
 
 ### Regression Analysis
 
-
-
-regr <- lm(wRC. ~ R + H + rbi, posey)
+regr <- lm(wRC. ~ R + H + RBI, posey)
 print(regr)
 summary(regr)
 
